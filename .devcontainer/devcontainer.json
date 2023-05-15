@@ -1,0 +1,10 @@
+{
+  "image": "artifactory.paesslergmbh.de/img-prod-docker/debian/devcontainer/terraform:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hashicorp.terraform"
+      ]
+    }
+  }
+}
