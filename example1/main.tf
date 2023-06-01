@@ -17,8 +17,9 @@ resource "random_pet" "cat" {
 }
 
 # var.pet from variables.tf file
-resource "local_file" "pet" {
+resource "local_file" "pet2" {
     filename = var.pet[0] # filename will be cat
+    content = "Pets2!"
 }
 
 # Example Access Resource Attributes

@@ -19,12 +19,12 @@ variable "Toni" {
       food = list(string)
       favorite_pet = bool
     })
-}
 
-default = {
-    name = "Toni"
-    color = "black"
-    age = "2"
-    food = ["chicken", "turkey", "meatball"]
-    favorite_pet = true
+    default = {
+        name = "Toni"
+        color = "black"
+        age = "2"
+        food = ["chicken", "turkey", "meatball"]
+        favorite_pet = true
+    }
 }
