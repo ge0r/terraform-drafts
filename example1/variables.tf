@@ -11,7 +11,7 @@ variable "file-content" {
   }
 }
 
-variable "Toni" {
+variable "toni" {
   type = object({
     name         = string
     color        = string
@@ -27,4 +27,23 @@ variable "Toni" {
     food         = ["chicken", "turkey", "meatball"]
     favorite_pet = true
   }
+}
+
+variable "bird-filename" {
+  type=list(string) # type is not explicitly required
+  default = [
+    "/root/parrot.txt",
+    "/root/sparrow.txt",
+    "/root/eagle.txt",
+    "/root/duck.txt"
+  ]
+}
+
+variable "reptile-filename" {
+  type=set(string) # type is not explicitly required
+  default = [
+    "/root/lizzard.txt",
+    "/root/snake.txt",
+    "/root/turtle.txt",
+  ]
 }
